@@ -1,3 +1,4 @@
+import 'package:coffee_card/styled_body_text.dart';
 import 'package:coffee_card/tea_prefs.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            "My Tea Shop",
+            "My Tea Identity",
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
           backgroundColor: const Color.fromARGB(255, 93, 153, 89),
@@ -22,7 +23,7 @@ class Home extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(20),
               color: Colors.green[200],
-              child: const Text('How I like my tea...'),
+              child: const StyledBodyText('How I like my tea:'),
             ),
             Container(
                 padding: const EdgeInsets.all(20),
